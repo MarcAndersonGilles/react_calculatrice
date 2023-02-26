@@ -1,0 +1,61 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 100;
+}
+
+.calculatrice-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgb(90, 90, 198);
+  min-height: 360px;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculatrice {
+  display: grid;
+  grid-template-columns: repeat(4, 70px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 70px);
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border-radius: 1em;
+  border: solid white 5px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.calculatrice > button {
+  cursor: pointer;
+  font-size: 2rem;
+  border: 1px solid black;
+  outline: none;
+  background-color: rgb(60, 60, 103);
+}
+
+.calculatrice > button:hover {
+  background-color: rgb(60, 60, 103);
+}
+
+.span-deux {
+  grid-column: span 2;
+}
+
+.operateur-container {
+  display: flex;
+  align-items: flex-end;
+  grid-column: 1/-1;
+  background-color: white;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 15px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.operateur-container .operateur-avant {
+  color: black;
+  font-size: 2em;
+}/*# sourceMappingURL=home.css.map */

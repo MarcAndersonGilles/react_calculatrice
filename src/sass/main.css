@@ -1,0 +1,7 @@
+.calculatrice {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: red;
+  min-height: 360px;
+}/*# sourceMappingURL=main.css.map */
